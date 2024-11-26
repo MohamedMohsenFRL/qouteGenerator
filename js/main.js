@@ -48,7 +48,7 @@ function generateQuote() {
   quoteContainer.splice(randomQuote, 1);
 
   if (quoteContainer.length == 0) {
-    quoteContainer = JSON.parse(localStorage.getItem("quotes"));
+    quoteContainer = JSON.parse(sessionStorage.getItem("quotes"));
   }
   
 }
